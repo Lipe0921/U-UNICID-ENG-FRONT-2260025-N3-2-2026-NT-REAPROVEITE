@@ -2,6 +2,8 @@
 
 > Projeto desenvolvido por estudantes de Engenharia de Software da UNICID com o objetivo de promover a sustentabilidade, o combate ao desperdício e a preservação ambiental.
 
+🌐 **Acesse o projeto online:** [Clique aqui para abrir o site no Railway](https://u-unicid-eng-front-2260025-n3-2-2026-nt-reaprove-production.up.railway.app)
+
 ---
 
 ## 🎯 Sobre o Projeto
@@ -18,7 +20,7 @@ Projeto desenvolvido por alunos do curso de **Engenharia de Software** da **UNIC
 * **Arthur Lanzoni Quim** – [LinkedIn](https://www.linkedin.com/in/arthur-q-a659123b3/)
 * **Davi Melo Salgueiro Leonardi** – [LinkedIn](https://www.linkedin.com/in/davi-leonardi-/)
 * **Kaiky dos Santos Ferreira** – [LinkedIn](https://www.linkedin.com/in/kaiky-dos-santos-ferreira-b52680340/)
-* **Vinicius de Souza Vicente** 
+* **Vinicius de Souza Vicente** – [LinkedIn](https://www.linkedin.com/in/vinicius-de-souza-vicente)
 
 **Professores Orientadores:** Prof. Paulo Fratta / Prof.ª Tatiana
 
@@ -56,3 +58,12 @@ Projeto desenvolvido por alunos do curso de **Engenharia de Software** da **UNIC
 
 ---
 
+## 📌 Como Executar o Projeto Localmente
+```bash
+# Clone este repositório
+git clone [https://github.com/seu-usuario/reaproveite.git](https://github.com/seu-usuario/reaproveite.git)
+
+# Acesse a pasta do projeto
+cd reaproveite
+
+# Abra o arquivo index.html no seu navegador de preferência ou utilize a extensão Live Server no VS Code.
