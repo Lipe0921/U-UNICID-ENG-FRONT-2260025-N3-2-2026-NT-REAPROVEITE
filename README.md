@@ -1,65 +1,67 @@
 # 🍏 Reaproveite
 
-> Projeto desenvolvido por estudantes de Engenharia de Software da **UNICID** com o objetivo de promover a sustentabilidade, o consumo consciente e a redução do desperdício de alimentos.
+> Projeto desenvolvido por estudantes de Engenharia de Software da UNICID com o objetivo de promover a sustentabilidade, o combate ao desperdício e a preservação ambiental.
 
 ---
 
-## 📌 Sobre o Projeto
-O **Reaproveite** é um portal web educativo, intuitivo e acessível voltado a ensinar a população a aproveitar melhor os alimentos, economizar dinheiro e cuidar do meio ambiente. Diariamente, grandes quantidades de alimentos próprios para consumo são descartadas por falta de conhecimento sobre o uso integral de cascas, talos, sementes e folhas, além da ausência de planejamento nas compras e no armazenamento. 
+## 🎯 Sobre o Projeto
+Este repositório contém o projeto do nosso grupo, cuja finalidade destaca-se pelo **reaproveitamento de alimentos**, pela **conscientização sobre o descarte correto** e pelo **cuidado com o meio ambiente**. 
 
-Nossa plataforma une a economia doméstica à preservação ambiental, oferecendo guias práticos, receitas sustentáveis e ferramentas acessíveis para toda a sociedade.
+O tema central do projeto foca em ensinar a população a aproveitar melhor os alimentos, economizar dinheiro e cuidar do meio ambiente por meio do consumo consciente e da redução do desperdício orgânico. Diariamente, grandes quantidades de alimentos próprios para consumo são descartadas por falta de conhecimento sobre o uso integral de cascas, talos, sementes e folhas, além da ausência de planejamento nas compras e no armazenamento.
 
 ---
 
-## 👥 Equipe do Projeto
-* **Arthur Lanzoni Quim**
-* **Davi Melo Salgueiro Leonardi**
-* **Felipe de Souza Ferreira** - [LinkedIn](https://www.linkedin.com/in/lipe1209)
-* **Kaiky dos Santos Ferreira**
-* **Vinicius de Souza Vicente**
+## 👥 Equipe e Orientação
+Projeto desenvolvido por alunos do curso de **Engenharia de Software** da **UNICID**:
+
+* **Felipe De Souza Ferreira** – [LinkedIn](https://www.linkedin.com/in/lipe1209)
+* **Arthur Lanzoni Quim** – [LinkedIn](https://www.linkedin.com/in/arthur-q-a659123b3/)
+* **Davi Melo Salgueiro Leonardi** – [LinkedIn](https://www.linkedin.com/in/davi-leonardi-/)
+* **Kaiky dos Santos Ferreira** – [LinkedIn](https://www.linkedin.com/in/kaiky-dos-santos-ferreira-b52680340/)
+* **Vinicius de Souza Vicente** – [LinkedIn](https://www.linkedin.com/in/vinicius-de-souza-vicente) *(ajuste o link se necessário)*
 
 **Professores Orientadores:** Prof. Paulo Fratta / Prof.ª Tatiana
 
 ---
 
-## 🗺️ Estrutura do Site (Escopo das 10 Páginas)
-O portal é composto por **10 páginas HTML5 interligadas**, estruturadas para garantir uma navegação fluida e acessível:
-
-1. **`index.html`** - Página inicial com introdução ao aproveitamento integral e pilares do consumo consciente.
-2. **`sobre.html`** - História, missão, visão e valores do projeto.
-3. **`projetos.html`** - Oficinas comunitárias, técnicas de compostagem caseira e hortas urbanas.
-4. **`impacto.html`** - Dados quantitativos, gráficos e tabelas sobre economia financeira e redução de lixo orgânico.
-5. **`acessibilidade.html`** - Detalhes sobre as melhorias de usabilidade e acessibilidade digital implementadas.
-6. **`galeria.html`** - Fotos ilustrativas com legendas explicativas sobre receitas e conservação de alimentos.
-7. **`midia.html`** - Vídeos práticos de culinária, podcasts e mapa interativo de feiras orgânicas/pontos de doação.
-8. **`noticias.html`** - Artigos com dicas de produtos da estação e matérias sobre sustentabilidade.
-9. **`contato.html`** - Dados da equipe e formulário de contato com validações nativas em HTML5.
-10. **`orcamento_hospedagem.html`** - Estudo comparativo de custos de hospedagem e registro de domínio.
+## 🎯 Objetivos do Projeto
+* **Objetivo Geral:** Criar um portal web completo, educativo, intuitivo e acessível para orientar o público sobre o aproveitamento integral dos alimentos, a redução de despesas e a proteção ao meio ambiente, estruturado em 10 páginas HTML5 interligadas.
+* **Objetivos Específicos:**
+  * Disponibilizar guias práticos e receitas sustentáveis.
+  * Implementar melhorias técnicas de acessibilidade digital (HTML5 semântico, alto contraste, navegação por teclado, ARIA).
+  * Disponibilizar formulário de contato com validações nativas em HTML5.
+  * Elaborar um relatório comparativo de orçamento para três serviços de hospedagem e três registros de domínio.
+  * Validar 100% do código HTML5 e CSS3 nos padrões do W3C sem erros.
 
 ---
 
-## 🛠️ Tecnologias e Padrões
-* **Linguagens:** HTML5 semântico (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) e CSS3 responsivo.
-* **Ferramentas:** VS Code, Git/GitHub e Validadores W3C (código validado 100% sem erros).
-* **Acessibilidade:** Alto contraste de cores, navegação completa via teclado, atributos ARIA e suporte a leitores de tela.
+## 🗺️ Estrutura do Site (10 Páginas)
+1. **`index.html`** – Introdução ao aproveitamento integral dos alimentos, benefícios econômicos e pilares do consumo consciente.
+2. **`sobre.html`** – História, missão, visão e valores do projeto.
+3. **`projetos.html`** – Oficinas comunitárias de culinária sustentável, técnicas de compostagem caseira e hortas urbanas.
+4. **`impacto.html`** – Dados quantitativos, gráficos e tabelas sobre economia financeira e redução de lixo orgânico.
+5. **`acessibilidade.html`** – Detalhes das melhorias de usabilidade e recursos de acessibilidade digital.
+6. **`galeria.html`** – Fotos ilustrativas com legendas explicativas sobre receitas e conservação de alimentos.
+7. **`midia.html`** – Vídeos práticos de culinária, podcasts de economia doméstica e mapa interativo via iframe de feiras orgânicas.
+8. **`noticias.html`** – Artigos com dicas de produtos da estação e matérias sobre alimentação sustentável.
+9. **`contato.html`** – Dados fictícios da equipe e formulário de contato validado.
+10. **`orcamento_hospedagem.html`** – Estudo comparativo de custos de hospedagem e domínio.
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## 🛠️ Tecnologias Utilizadas
+* **Linguagens:** HTML5 e CSS3
+* **Ferramentas:** VS Code
+* **Validação:** Validadores W3C
 
-Para clonar e testar o site em sua máquina, siga os passos abaixo:
+---
 
+## 📌 Como Executar o Projeto
 ```bash
 # Clone este repositório
-git clone https://github.com/seu-usuario/reaproveite.git
+git clone [https://github.com/seu-usuario/reaproveite.git](https://github.com/seu-usuario/reaproveite.git)
 
 # Acesse a pasta do projeto
 cd reaproveite
 
-# Abra o arquivo index.html no seu navegador de preferência ou utilize a extensão "Live Server" no VS Code.
-```
-
----
-
-## 📄 Licença
-Este projeto foi desenvolvido para fins educacionais e acadêmicos. Sinta-se à vontade para explorar, aprender e contribuir com as práticas de sustentabilidade!
+# Abra o arquivo index.html no seu navegador de preferência ou utilize a extensão Live Server no VS Code.
