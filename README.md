@@ -18,7 +18,7 @@ Projeto desenvolvido por alunos do curso de **Engenharia de Software** da **UNIC
 * **Arthur Lanzoni Quim** – [LinkedIn](https://www.linkedin.com/in/arthur-q-a659123b3/)
 * **Davi Melo Salgueiro Leonardi** – [LinkedIn](https://www.linkedin.com/in/davi-leonardi-/)
 * **Kaiky dos Santos Ferreira** – [LinkedIn](https://www.linkedin.com/in/kaiky-dos-santos-ferreira-b52680340/)
-* **Vinicius de Souza Vicente** – [LinkedIn](https://www.linkedin.com/in/vinicius-de-souza-vicente) *(ajuste o link se necessário)*
+* **Vinicius de Souza Vicente** 
 
 **Professores Orientadores:** Prof. Paulo Fratta / Prof.ª Tatiana
 
