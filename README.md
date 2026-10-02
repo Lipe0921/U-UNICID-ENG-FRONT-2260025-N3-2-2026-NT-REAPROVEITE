@@ -56,12 +56,3 @@ Projeto desenvolvido por alunos do curso de **Engenharia de Software** da **UNIC
 
 ---
 
-## 📌 Como Executar o Projeto
-```bash
-# Clone este repositório
-git clone [https://github.com/seu-usuario/reaproveite.git](https://github.com/seu-usuario/reaproveite.git)
-
-# Acesse a pasta do projeto
-cd reaproveite
-
-# Abra o arquivo index.html no seu navegador de preferência ou utilize a extensão Live Server no VS Code.
