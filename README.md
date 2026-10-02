@@ -2,7 +2,7 @@
 
 > Projeto desenvolvido por estudantes de Engenharia de Software da UNICID com o objetivo de promover a sustentabilidade, o combate ao desperdício e a preservação ambiental.
 
-🌐 **Acesse o projeto online:** [Clique aqui para abrir o site no Railway](https://u-unicid-eng-front-2260025-n3-2-2026-nt-reaprove-production.up.railway.app)
+🌐 **Acesse o projeto online:** [Clique aqui para abrir o site do nosso projeto!](https://u-unicid-eng-front-2260025-n3-2-2026-nt-reaprove-production.up.railway.app)
 
 ---
 
