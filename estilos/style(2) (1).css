@@ -1,0 +1,159 @@
+/* CONFIGURAÇÕES GERAIS
+Comecei retirando as margens padrão e escolhendo
+a fonte Arial, porque é simples e fácil de ler.
+Escolhi o verde-claro para o fundo por combinar
+com o tema de sustentabilidade do projeto.
+*/
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #a9c95d;
+    color: #252724;
+}  /* Criei uma área principal para deixar o conteúdo organizado e centralizado na tela.
+Defini uma largura máxima de 1200 pixels,
+fundo branco e bordas arredondadas.*/
+.pagina {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* Usei o Flexbox para colocar o nome do projeto à esquerda e o menu à direita.
+Também adicionei espaçamentos para os elementos não ficarem muito próximos. */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+/* Escolhi o verde-escuro para destacar o nome do projeto no cabeçalho. */
+.cabecalho h2 {
+    color: #315b32;
+}
+/* MENU Organizei os itens do menu lado a lado e coloquei um espaço de 25 pixels entre eles.
+*/
+.menu {
+    display: flex;
+    gap: 25px;
+}
+/*Coloquei um fundo verde bem claro para diferenciar a apresentação das outras partes do site.
+Utilizei o Flexbox para deixar o texto principal e o quadro de mensagem lado a lado.
+*/
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 70px 40px;
+    background-color: #f5f9ec;
+}
+/* Limitei a largura da apresentação para o texto não ocupar a tela inteira. */
+.apresentacao {
+    max-width: 500px;
+}
+/* Aumentei o tamanho do título e utilizei uma cor verde-escura para dar destaque
+à mensagem principal do projeto.
+*/
+.apresentacao h1 {
+    font-size: 42px;
+    color: #263c28;
+}
+/* Aumentei o espaço entre as linhas dosparágrafos para facilitar a leitura. */
+.apresentacao p {
+    line-height: 1.6;
+}
+/* Criei um botão apenas visual, com fundo verde,espaçamento interno e bordas arredondadas.
+Ele ainda não possui nenhuma funcionalidade.
+*/
+.botao {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #a9c95d;
+    border-radius: 25px;
+}
+/* Coloquei um quadro ao lado da apresentação para destacar a frase "Cada alimento tem valor!".
+Utilizei fundo verde-claro, bordas arredondadas e textos centralizados.
+*/
+.mensagem {
+    padding: 35px;
+    background-color: #dcebbd;
+    border-radius: 15px;
+    text-align: center;
+}
+/* Criei um espaço interno para separar essa seção do restante do site.
+Também centralizei o título da seção.
+*/
+.beneficios {
+    padding: 50px 40px;
+    text-align: center;
+}
+/* Utilizei o Flexbox para deixar os trêscartões lado a lado.
+Coloquei um espaço de 20 pixels entre eles e uma margem acima para separar do título.
+*/
+.cartoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+/*Usei flex: 1 para distribuir o espaço igualmente entre os três cartões.
+Também coloquei um fundo verde bem claro, bordas arredondadas e textos à esquerda.
+*/
+.cartao {
+    flex: 1;
+    padding: 25px;
+    background-color: #f1f6e7;
+    border-radius: 10px;
+    text-align: left;
+}
+/* Coloquei os títulos dos cartões em verde-escuro para destacar cada benefício. */
+.cartao h3 {
+    color: #315b32;
+}
+/*  Escolhi um fundo verde-escuro e letras brancas para diferenciar o rodapé das outras seções da página.
+Também centralizei os textos.
+*/
+.rodape {
+    padding: 20px;
+    background-color: #315b32;
+    color: white;
+    text-align: center;
+}
+/* RESPONSIVIDADE
+Por último, adaptei o site para celulares. Quando a tela tiver até 700 pixels de largura,
+os elementos que estavam lado a lado passam a ficar um abaixo do outro.
+Também diminuí os espaçamentos e o tamanho do título para facilitar a visualização.
+*/
+@media (max-width: 700px) {
+
+    /* Diminuí o espaço ao redor da página. */
+
+    body {
+        padding: 10px;
+    }
+
+    /* Coloquei o cabeçalho, a apresentação
+    e os cartões na vertical. */
+
+    .cabecalho,
+    .destaque,
+    .cartoes {
+        flex-direction: column;
+    }
+
+    /* Permiti que o menu ocupe mais de
+    uma linha e fique centralizado. */
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Diminuí o título principal para
+    ele caber melhor na tela do celular. */
+
+    .apresentacao h1 {
+        font-size: 32px;
+    }
+}
