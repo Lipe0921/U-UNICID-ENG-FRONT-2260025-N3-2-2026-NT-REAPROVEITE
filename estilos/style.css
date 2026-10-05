@@ -10,7 +10,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #a9c95d;
     color: #252724;
-}  /* Criei uma área principal para deixar o conteúdo organizado e centralizado na tela.
+}
+
+/* Criei uma área principal para deixar o conteúdo organizado e centralizado na tela.
 Defini uma largura máxima de 1200 pixels,
 fundo branco e bordas arredondadas.*/
 .pagina {
@@ -20,6 +22,7 @@ fundo branco e bordas arredondadas.*/
     border-radius: 15px;
     overflow: hidden;
 }
+
 /* Usei o Flexbox para colocar o nome do projeto à esquerda e o menu à direita.
 Também adicionei espaçamentos para os elementos não ficarem muito próximos. */
 .cabecalho {
@@ -28,16 +31,26 @@ Também adicionei espaçamentos para os elementos não ficarem muito próximos. 
     align-items: center;
     padding: 25px 40px;
 }
+
 /* Escolhi o verde-escuro para destacar o nome do projeto no cabeçalho. */
 .cabecalho h2 {
     color: #315b32;
 }
-/* MENU Organizei os itens do menu lado a lado e coloquei um espaço de 25 pixels entre eles.
+
+/* MENU
+ALTERADO: como o menu agora tem nove itens, ele precisa de mais espaço.
+Organizei os itens lado a lado e diminuí o espaço entre eles para 20 pixels
+na horizontal e 10 pixels na vertical.
+Com flex-wrap, se os itens não couberem em uma linha, eles passam para a linha de baixo.
+Com justify-content: flex-end, o menu continua alinhado à direita.
 */
 .menu {
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 20px;
 }
+
 /*Coloquei um fundo verde bem claro para diferenciar a apresentação das outras partes do site.
 Utilizei o Flexbox para deixar o texto principal e o quadro de mensagem lado a lado.
 */
@@ -49,10 +62,12 @@ Utilizei o Flexbox para deixar o texto principal e o quadro de mensagem lado a l
     padding: 70px 40px;
     background-color: #f5f9ec;
 }
+
 /* Limitei a largura da apresentação para o texto não ocupar a tela inteira. */
 .apresentacao {
     max-width: 500px;
 }
+
 /* Aumentei o tamanho do título e utilizei uma cor verde-escura para dar destaque
 à mensagem principal do projeto.
 */
@@ -60,11 +75,13 @@ Utilizei o Flexbox para deixar o texto principal e o quadro de mensagem lado a l
     font-size: 42px;
     color: #263c28;
 }
-/* Aumentei o espaço entre as linhas dosparágrafos para facilitar a leitura. */
+
+/* Aumentei o espaço entre as linhas dos parágrafos para facilitar a leitura. */
 .apresentacao p {
     line-height: 1.6;
 }
-/* Criei um botão apenas visual, com fundo verde,espaçamento interno e bordas arredondadas.
+
+/* Criei um botão apenas visual, com fundo verde, espaçamento interno e bordas arredondadas.
 Ele ainda não possui nenhuma funcionalidade.
 */
 .botao {
@@ -73,6 +90,7 @@ Ele ainda não possui nenhuma funcionalidade.
     background-color: #a9c95d;
     border-radius: 25px;
 }
+
 /* Coloquei um quadro ao lado da apresentação para destacar a frase "Cada alimento tem valor!".
 Utilizei fundo verde-claro, bordas arredondadas e textos centralizados.
 */
@@ -82,6 +100,7 @@ Utilizei fundo verde-claro, bordas arredondadas e textos centralizados.
     border-radius: 15px;
     text-align: center;
 }
+
 /* Criei um espaço interno para separar essa seção do restante do site.
 Também centralizei o título da seção.
 */
@@ -89,7 +108,8 @@ Também centralizei o título da seção.
     padding: 50px 40px;
     text-align: center;
 }
-/* Utilizei o Flexbox para deixar os trêscartões lado a lado.
+
+/* Utilizei o Flexbox para deixar os três cartões lado a lado.
 Coloquei um espaço de 20 pixels entre eles e uma margem acima para separar do título.
 */
 .cartoes {
@@ -97,6 +117,7 @@ Coloquei um espaço de 20 pixels entre eles e uma margem acima para separar do t
     gap: 20px;
     margin-top: 30px;
 }
+
 /*Usei flex: 1 para distribuir o espaço igualmente entre os três cartões.
 Também coloquei um fundo verde bem claro, bordas arredondadas e textos à esquerda.
 */
@@ -107,11 +128,13 @@ Também coloquei um fundo verde bem claro, bordas arredondadas e textos à esque
     border-radius: 10px;
     text-align: left;
 }
+
 /* Coloquei os títulos dos cartões em verde-escuro para destacar cada benefício. */
 .cartao h3 {
     color: #315b32;
 }
-/*  Escolhi um fundo verde-escuro e letras brancas para diferenciar o rodapé das outras seções da página.
+
+/* Escolhi um fundo verde-escuro e letras brancas para diferenciar o rodapé das outras seções da página.
 Também centralizei os textos.
 */
 .rodape {
@@ -120,6 +143,7 @@ Também centralizei os textos.
     color: white;
     text-align: center;
 }
+
 /* RESPONSIVIDADE
 Por último, adaptei o site para celulares. Quando a tela tiver até 700 pixels de largura,
 os elementos que estavam lado a lado passam a ficar um abaixo do outro.
