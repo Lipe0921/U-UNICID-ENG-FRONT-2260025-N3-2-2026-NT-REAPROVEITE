@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fale com a equipe do Reaproveita e tire dúvidas com o nosso assistente virtual.">
+    <title>Contato | Reaproveita</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <div class="pagina">
+        <header class="cabecalho">
+            <h2>Reaproveita.</h2>
+            <nav class="menu" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="impacto.html">Impacto</a>
+                <a href="acessibilidade.html">Acessibilidade</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="midia.html">Mídia</a>
+                <a href="noticias.html">Notícias</a>
+                <a href="contato.html" aria-current="page">Contato</a>
+                <a href="orcamento_hospedagem.html">Orçamento</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="beneficios">
+                <h1>Fale Conosco</h1>
+                <p>Envie dúvidas, sugestões de receitas ou solicite parcerias com nosso projeto.</p>
+
+                <form action="#" method="post" style="max-width: 600px; margin: auto; text-align: left;">
+                    <p>
+                        <label for="nome">Nome completo:</label><br>
+                        <input type="text" id="nome" name="nome" required style="width: 100%; padding: 8px;">
+                    </p>
+                    <p>
+                        <label for="email">E-mail de contato:</label><br>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;">
+                    </p>
+                    <p>
+                        <label for="tel">Telefone:</label><br>
+                        <input type="tel" id="tel" name="tel" required pattern="\(\d{2}\) \d{4,5}-\d{4}" aria-describedby="dica-tel" placeholder="(11) 91234-5678" style="width: 100%; padding: 8px;">
+                        <small id="dica-tel">Formato esperado: (11) 91234-5678</small>
+                    </p>
+                    <p>
+                        <label for="data">Data sugerida para contato:</label><br>
+                        <input type="date" id="data" name="data" required style="width: 100%; padding: 8px;">
+                    </p>
+                    <p>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="5" required style="width: 100%; padding: 8px;"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit" class="botao">Enviar Mensagem</button>
+                    </p>
+                </form>
+
+                <!-- Assistente FAQ do Site -->
+                <div style="margin-top: 40px; padding: 20px; background-color: #dcebbd; border-radius: 10px;">
+                    <h2>Assistente de Dúvidas Rápida</h2>
+                    <button id="abrir" aria-expanded="false" aria-controls="bot" class="botao">Tirar Dúvida</button>
+
+                    <section id="bot" hidden aria-label="Assistente virtual" style="margin-top: 15px;">
+                        <div id="chat" aria-live="polite" style="padding: 10px; background: white; border-radius: 5px; margin-bottom: 10px;">
+                            Digite palavras como "receita", "doar" ou "oficina".
+                        </div>
+                        <label for="perg">Digite sua pergunta:</label>
+                        <input id="perg" type="text" style="padding: 8px;">
+                        <button id="enviar" class="botao">Buscar</button>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Reaproveita - 2026</p>
+            <p>Pequenas atitudes, grandes mudanças.</p>
+        </footer>
+    </div>
+
+    <script>
+        const faq = {
+            receita: "Encontre receitas de cascas e talos na nossa página de Galeria!",
+            doar: "Apoiadores podem entrar em contato via formulário nesta página.",
+            oficina: "Nossas oficinas presenciais são divulgadas na página Projetos."
+        };
+        const abrir = document.getElementById("abrir");
+        const bot = document.getElementById("bot");
+        const enviar = document.getElementById("enviar");
+        const perg = document.getElementById("perg");
+        const chat = document.getElementById("chat");
+
+        abrir.onclick = () => {
+            bot.hidden = !bot.hidden;
+            abrir.setAttribute("aria-expanded", !bot.hidden);
+        };
+
+        enviar.onclick = () => {
+            const p = perg.value.toLowerCase();
+            const k = Object.keys(faq).find(chave => p.includes(chave));
+            chat.textContent = k ? faq[k] : "Não encontrei. Tente: receita, doar ou oficina.";
+        };
+    </script>
+</body>
+</html>
