@@ -1,183 +1,307 @@
-/* CONFIGURAÇÕES GERAIS
-Comecei retirando as margens padrão e escolhendo
-a fonte Arial, porque é simples e fácil de ler.
-Escolhi o verde-claro para o fundo por combinar
-com o tema de sustentabilidade do projeto.
-*/
-body {
+/* ==========================================================================
+   PROJETO REAPROVEITA - ESTILOS GERAIS E UNIFICADOS
+   Tema: Sustentabilidade, combate ao desperdício e inclusão.
+   ========================================================================== */
+
+/* 1. VARIÁVEIS E CONFIGURAÇÕES GERAIS */
+:root {
+    --cor-fundo: #a9c95d;          /* Verde principal de fundo */
+    --cor-suave: #f5f9ec;          /* Fundo suave de cards/destaque */
+    --cor-destaque: #dcebbd;       /* Verde claro de contraste */
+    --cor-primaria: #315b32;       /* Verde escuro para títulos e botões */
+    --cor-primaria-hover: #234324; /* Verde escuro para hover */
+    --cor-texto: #252724;          /* Texto escuro de alto contraste */
+    --cor-branca: #ffffff;
+    --cor-borda: #cccccc;
+    --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 30px;
-    font-family: Arial, sans-serif;
-    background-color: #a9c95d;
-    color: #252724;
+    padding: 0;
 }
 
-/* Criei uma área principal para deixar o conteúdo organizado e centralizado na tela.
-Defini uma largura máxima de 1200 pixels,
-fundo branco e bordas arredondadas.*/
-.pagina {
-    max-width: 1200px;
-    margin: auto;
-    background-color: white;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-/* Usei o Flexbox para colocar o nome do projeto à esquerda e o menu à direita.
-Também adicionei espaçamentos para os elementos não ficarem muito próximos. */
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 40px;
-}
-
-/* Escolhi o verde-escuro para destacar o nome do projeto no cabeçalho. */
-.cabecalho h2 {
-    color: #315b32;
-}
-
-/* MENU
-ALTERADO: como o menu agora tem nove itens, ele precisa de mais espaço.
-Organizei os itens lado a lado e diminuí o espaço entre eles para 20 pixels
-na horizontal e 10 pixels na vertical.
-Com flex-wrap, se os itens não couberem em uma linha, eles passam para a linha de baixo.
-Com justify-content: flex-end, o menu continua alinhado à direita.
-*/
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 10px 20px;
-}
-
-/*Coloquei um fundo verde bem claro para diferenciar a apresentação das outras partes do site.
-Utilizei o Flexbox para deixar o texto principal e o quadro de mensagem lado a lado.
-*/
-.destaque {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 70px 40px;
-    background-color: #f5f9ec;
-}
-
-/* Limitei a largura da apresentação para o texto não ocupar a tela inteira. */
-.apresentacao {
-    max-width: 500px;
-}
-
-/* Aumentei o tamanho do título e utilizei uma cor verde-escura para dar destaque
-à mensagem principal do projeto.
-*/
-.apresentacao h1 {
-    font-size: 42px;
-    color: #263c28;
-}
-
-/* Aumentei o espaço entre as linhas dos parágrafos para facilitar a leitura. */
-.apresentacao p {
+body {
+    padding: 20px;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     line-height: 1.6;
 }
 
-/* Criei um botão apenas visual, com fundo verde, espaçamento interno e bordas arredondadas.
-Ele ainda não possui nenhuma funcionalidade.
-*/
-.botao {
-    display: inline-block;
-    padding: 15px 25px;
-    background-color: #a9c95d;
-    border-radius: 25px;
-}
-
-/* Coloquei um quadro ao lado da apresentação para destacar a frase "Cada alimento tem valor!".
-Utilizei fundo verde-claro, bordas arredondadas e textos centralizados.
-*/
-.mensagem {
-    padding: 35px;
-    background-color: #dcebbd;
+/* 2. ESTRUTURA PRINCIPAL */
+.pagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--cor-branca);
     border-radius: 15px;
-    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Criei um espaço interno para separar essa seção do restante do site.
-Também centralizei o título da seção.
-*/
+/* 3. CABEÇALHO E MENU DE NAVEGAÇÃO */
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 30px;
+    border-bottom: 2px solid var(--cor-suave);
+}
+
+.cabecalho h2 {
+    color: var(--cor-primaria);
+    font-size: 28px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 15px;
+}
+
+.menu a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.menu a:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* Destaque para a página atual no menu (Acessibilidade) */
+.menu a[aria-current="page"] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+/* 4. SEÇÃO DE DESTAQUE (HERO) */
+.destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 30px;
+    background-color: var(--cor-suave);
+}
+
+.apresentacao {
+    max-width: 600px;
+}
+
+.apresentacao h1 {
+    font-size: 36px;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.apresentacao p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.mensagem {
+    padding: 25px;
+    background-color: var(--cor-destaque);
+    border-radius: 12px;
+    text-align: center;
+    border-left: 5px solid var(--cor-primaria);
+}
+
+.mensagem h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 8px;
+}
+
+/* 5. SEÇÕES DE CONTEÚDO E CARTOES */
 .beneficios {
-    padding: 50px 40px;
+    padding: 40px 30px;
     text-align: center;
 }
 
-/* Utilizei o Flexbox para deixar os três cartões lado a lado.
-Coloquei um espaço de 20 pixels entre eles e uma margem acima para separar do título.
-*/
+.beneficios h1 {
+    font-size: 32px;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.beneficios > p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 17px;
+}
+
 .cartoes {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-/*Usei flex: 1 para distribuir o espaço igualmente entre os três cartões.
-Também coloquei um fundo verde bem claro, bordas arredondadas e textos à esquerda.
-*/
 .cartao {
-    flex: 1;
     padding: 25px;
     background-color: #f1f6e7;
     border-radius: 10px;
     text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* Coloquei os títulos dos cartões em verde-escuro para destacar cada benefício. */
 .cartao h3 {
-    color: #315b32;
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
-/* Escolhi um fundo verde-escuro e letras brancas para diferenciar o rodapé das outras seções da página.
-Também centralizei os textos.
-*/
+.cartao a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--cor-primaria);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 6. COMPONENTES: BOTÕES E LINKS */
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca) !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.botao:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+/* 7. FORMULÁRIOS E CAMPOS DE ENTRADA */
+form {
+    background-color: var(--cor-suave);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--cor-destaque);
+}
+
+form label {
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+form input,
+form textarea {
+    font-family: inherit;
+    font-size: 15px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus,
+button:focus,
+a:focus {
+    outline: 3px solid #ffbf47; /* Indicador de foco de alto contraste para acessibilidade */
+    outline-offset: 2px;
+}
+
+form small {
+    color: #555555;
+    display: block;
+    margin-top: 4px;
+}
+
+/* 8. TABELAS (Página de Orçamento de Hospedagem) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: left;
+}
+
+table th, 
+table td {
+    padding: 12px 15px;
+    border: 1px solid var(--cor-borda);
+}
+
+table th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--cor-suave);
+}
+
+/* 9. MÍDIA, IMAGENS E IFRAMES */
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--cor-texto);
+}
+
+iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 10. RODAPÉ */
 .rodape {
-    padding: 20px;
-    background-color: #315b32;
-    color: white;
+    padding: 25px 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
     text-align: center;
+    font-size: 14px;
 }
 
-/* RESPONSIVIDADE
-Por último, adaptei o site para celulares. Quando a tela tiver até 700 pixels de largura,
-os elementos que estavam lado a lado passam a ficar um abaixo do outro.
-Também diminuí os espaçamentos e o tamanho do título para facilitar a visualização.
-*/
-@media (max-width: 700px) {
+.rodape p + p {
+    margin-top: 5px;
+    opacity: 0.9;
+}
 
-    /* Diminuí o espaço ao redor da página. */
-
+/* 11. LAYOUT RESPONSIVO (DESKTOP E TABLETS >= 768px) */
+@media (min-width: 768px) {
     body {
-        padding: 10px;
+        padding: 30px;
     }
 
-    /* Coloquei o cabeçalho, a apresentação
-    e os cartões na vertical. */
-
-    .cabecalho,
-    .destaque,
-    .cartoes {
-        flex-direction: column;
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-    /* Permiti que o menu ocupe mais de
-    uma linha e fique centralizado. */
 
     .menu {
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
-    /* Diminuí o título principal para
-    ele caber melhor na tela do celular. */
+    .destaque {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 40px;
+    }
 
-    .apresentacao h1 {
-        font-size: 32px;
+    .cartoes {
+        flex-direction: row;
+    }
+
+    .cartao {
+        flex: 1;
     }
 }
