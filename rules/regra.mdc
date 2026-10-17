@@ -1,0 +1,39 @@
+---
+description: Regras de desenvolvimento, acessibilidade WCAG e estrutura para o site Reaproveita.
+globs: **/*
+alwaysApply: true
+---
+
+# Regras do Projeto Reaproveita
+
+## 1. Objetivo
+Garantir que todo o código gerado ou modificado para o site Reaproveita siga os padrões de HTML5 semântico, CSS3 responsivo (mobile-first), acessibilidade digital (WCAG 2.2 AA) e organização definidos para o projeto.
+
+## 2. Contexto da Aplicação
+* **Tema:** Reaproveitamento de alimentos, combate ao desperdício e consumo consciente.
+* **Tecnologias:** HTML5 puro, CSS3 puro e JavaScript vanilla. Sem frameworks (não usar Bootstrap, Tailwind, React, Vue, etc.).
+* **Estrutura do Repositório:**
+  * 10 páginas HTML na raiz (`index.html`, `sobre.html`, `projetos.html`, `impacto.html`, `acessibilidade.html`, `galeria.html`, `midia.html`, `noticias.html`, `contato.html`, `orcamento_hospedagem.html`).
+  * Estilos na pasta `estilos/style.css`.
+  * Imagens na pasta `img/`.
+  * Documentação na pasta `docs/README.md`.
+
+## 3. Diretrizes de Código
+
+### HTML5 e Acessibilidade (WCAG AA)
+* **Estrutura semântica obrigatória:** Toda página deve usar `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` e `<footer>`. Não usar `<div>` para estruturação principal.
+* **Cabeçalhos:** Apenas um `<h1>` por página.
+* **Atributo de idioma:** O elemento `<html>` deve conter sempre `lang="pt-BR"`.
+* **Imagens:** Toda tag `<img>` deve conter um atributo `alt` descritivo.
+* **Formulários:** Todos os campos `<input>` e `<textarea>` devem ter um `<label>` correspondente com o atributo `for`.
+
+### CSS3 e Responsividade
+* **Mobile-First:** Escrever o CSS padrão voltado para celulares e usar `@media (min-width: 768px)` para telas maiores.
+* **Variáveis globais:** Usar as variáveis de cores e fontes definidas em `:root` no arquivo `estilos/style.css`.
+* **Foco visível:** Manter os estados `:focus` e `:focus-visible` visíveis para navegação por teclado.
+
+## 4. O que NÃO fazer
+* ❌ Não utilizar estilos CSS inline (dentro das tags HTML).
+* ❌ Não utilizar frameworks CSS ou JS externos.
+* ❌ Não criar imagens sem o atributo `alt`.
+* ❌ Não colocar senhas, chaves de API ou dados sensíveis no código do front-end.
