@@ -406,3 +406,14 @@ caption {
     text-align: left;
     color: #555555;
 }
+
+/* 14. FONTE DE DESTAQUE (LOGOTIPO) */
+@font-face {
+    font-family: "Blazed";
+    src: url("../assets/fonts/Blazed.ttf") format("truetype");
+    font-display: swap;
+}
+
+.cabecalho h2 {
+    font-family: "Blazed", var(--fonte-principal);
+}
