@@ -27,17 +27,33 @@ Testes feitos em 11/11/2026 com Chromium (Playwright) e html-validate. Prints em
 
 **Resultado:** 25 de 25 verificações passaram.
 
-## 2. Validação HTML (html-validate)
+## 2. Validação W3C (motor oficial Nu, `vnu`)
 
-- 10 páginas analisadas.
-- Erros de `no-implicit-button-type` e `wcag/h63` corrigidos.
-- 15 erros restantes, todos do tipo `no-inline-style`: atributos `style` inline, que já existiam no projeto original e são válidos no W3C.
-- **Pendente:** rodar o W3C Validator (validator.w3.org) em cada página e anexar o resultado aqui.
+Resultado final: **0 erros nas 10 páginas HTML**.
 
-## 3. Acessibilidade
+Correções feitas durante a validação:
+- Títulos `h3` que vinham logo após o `h1` passaram a ser `h2` (acessibilidade, impacto, midia, noticias, projetos e sobre).
+- Atributo `width="100%"` removido de iframes e de vídeo (a largura já vem do CSS).
+
+Observação: o `vnu` também foi rodado no CSS como se fosse HTML e acusou ausência de `<!DOCTYPE>`. Isso é falso positivo, porque o CSS não é HTML. Para validar o CSS, use o **W3C CSS Validator** (jigsaw.w3.org/css-validator), que ainda deve ser feito pela equipe.
+
+## 2.1 Validação de boas práticas (html-validate)
+- 15 avisos restantes, todos `no-inline-style`: atributos `style` inline, que já existiam no projeto original e são válidos no W3C.
+
+## 3. Lighthouse (Chromium, versão 12)
+
+| Página | Acessibilidade | Boas práticas | SEO |
+|---|---|---|---|
+| index.html | 100 | 96 | 100 |
+| contato.html | 100 | 96 | 100 |
+| midia.html | 100 | 96 | 100 |
+| orcamento_hospedagem.html | 100 | 96 | 100 |
+
+- A perda de 4 pontos em boas práticas vem do item “errors-in-console”. Provavelmente são os iframes de terceiros (YouTube e Google Maps), que não carregam no ambiente de teste. Não foi confirmado: abrir o site no navegador e conferir o console.
+
+## 4. Acessibilidade (verificada por código e por testes)
 - `lang="pt-BR"` em todas as páginas.
-- Um `<h1>` por página.
+- Um `<h1>` por página e hierarquia de títulos sem saltos.
 - `alt` em todas as imagens.
-- Campos com `<label for>`.
+- Campos com `<label for>` e `aria-describedby` nas mensagens de erro.
 - Foco visível (`outline`).
-- **Pendente:** rodar o Lighthouse no Chrome DevTools e anexar o print.

@@ -152,7 +152,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.cartao h3 {
+.cartao h2 {
     color: var(--cor-primaria);
     margin-bottom: 10px;
     font-size: 20px;
