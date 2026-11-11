@@ -11,7 +11,8 @@
     <div class="pagina">
         <header class="cabecalho">
             <h2>Reaproveita.</h2>
-            <nav class="menu" aria-label="Menu principal">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+            <nav id="menu-principal" class="menu" aria-label="Menu principal">
                 <a href="index.html">Início</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="projetos.html">Projetos</a>
@@ -30,44 +31,87 @@
                 <h1>Comparativo de Hospedagem e Domínio</h1>
                 <p>Estudo dos valores para manter o portal ativo com boa performance, segurança e acessibilidade.</p>
 
-                <div style="overflow-x: auto; margin-top: 20px;">
-                    <table style="width:100%; border-collapse: collapse; background: white; border-radius: 8px;">
+                <h2>1. Hospedagem (3 opções)</h2>
+                <div class="tabela-rolagem">
+                    <table>
+                        <caption>Comparativo de hospedagem web. Valores conferidos em 11/11/2026.</caption>
                         <thead>
-                            <tr style="background-color: #315b32; color: white;">
-                                <th style="padding: 10px; border: 1px solid #ccc;">Provedor / Registro</th>
-                                <th style="padding: 10px; border: 1px solid #ccc;">Plano / Domínio</th>
-                                <th style="padding: 10px; border: 1px solid #ccc;">Custo Mensal / Anual</th>
-                                <th style="padding: 10px; border: 1px solid #ccc;">Recursos / SSL</th>
+                            <tr>
+                                <th scope="col">Provedor</th>
+                                <th scope="col">Plano</th>
+                                <th scope="col">Custo</th>
+                                <th scope="col">Recursos</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Railway (PaaS)</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Hospedagem Web</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">US$ 5,00 / mês (~R$ 27,50)</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Deploy contínuo via GitHub, SSL automático.</td>
+                                <th scope="row">Railway</th>
+                                <td>Hospedagem (PaaS)</td>
+                                <td>US$ 5,00/mês (cerca de US$ 60/ano)</td>
+                                <td>Deploy automático a cada commit no GitHub e HTTPS automático.</td>
                             </tr>
                             <tr>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Hostinger</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Hospedagem Compartilhada</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">R$ 12,99 / mês</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">SSL Grátis, 100 GB SSD, e-mail corporativo.</td>
+                                <th scope="row">Hostinger</th>
+                                <td>Business (hospedagem compartilhada)</td>
+                                <td>R$ 12,99/mês com contrato de 48 meses (R$ 72,99/mês sem fidelidade)</td>
+                                <td>SSL grátis e painel próprio. Não tem deploy direto pelo GitHub.</td>
                             </tr>
                             <tr>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Vercel</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Hospedagem Estática (Hobby)</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Gratuito</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">CDN global, deploy via Git e SSL incluso.</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Registro.br</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Domínio .org.br ou .com.br</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">R$ 40,00 / ano</td>
-                                <td style="padding: 10px; border: 1px solid #ccc;">Registro oficial nacional para ONGs e projetos.</td>
+                                <th scope="row">Vercel</th>
+                                <td>Hobby (sites estáticos)</td>
+                                <td>Gratuito, somente para uso não comercial</td>
+                                <td>CDN global, deploy via Git e HTTPS incluso.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <h2>2. Domínio (3 opções)</h2>
+                <div class="tabela-rolagem">
+                    <table>
+                        <caption>Comparativo de registro de domínio. Preços sujeitos a alteração pelo fornecedor.</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Registrador</th>
+                                <th scope="col">Extensão</th>
+                                <th scope="col">Primeiro ano</th>
+                                <th scope="col">Renovação</th>
+                                <th scope="col">Observação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Registro.br</th>
+                                <td>.com.br</td>
+                                <td>R$ 40,00/ano</td>
+                                <td>R$ 40,00/ano</td>
+                                <td>Registro oficial brasileiro, com suporte em português.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Namecheap</th>
+                                <td>.org</td>
+                                <td>US$ 7,24 com cupom</td>
+                                <td>US$ 18,98/ano sem cupom</td>
+                                <td>Preço em dólar, variável conforme cupons.</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Hostinger</th>
+                                <td>.com</td>
+                                <td>R$ 49,99</td>
+                                <td>R$ 94,99/ano</td>
+                                <td>Pode ser comprado junto com a hospedagem.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>3. Justificativa da escolha</h2>
+                <ul class="justificativa">
+                    <li><strong>Hospedagem: Railway.</strong> É onde o site já está publicado. O deploy é automático a cada commit no GitHub e o HTTPS é automático, o que facilita manter o site atualizado durante o projeto. A Vercel seria a opção mais barata, mas o plano gratuito é só para uso não comercial. A Hostinger custa menos por mês, porém não faz deploy direto pelo GitHub.</li>
+                    <li><strong>Domínio: Registro.br (.com.br).</strong> É a opção de menor custo anual entre as três, em reais, sem variação de câmbio, e é o registro oficial do Brasil.</li>
+                    <li><strong>Custo anual estimado da escolha:</strong> US$ 60 (Railway) + R$ 40 (.com.br). O total em reais depende do câmbio do dia.</li>
+                </ul>
+                <p class="nota-fonte">Fontes dos valores: Registro.br (preço de .com.br citado em homehost.com.br, atualizado em 28/09/2026); Namecheap (domainoffer.net, atualizado em 25/10/2026); Hostinger (hostinger.com/br, atualizado em 10/11/2026). Railway e Vercel: confirmar nos sites oficiais antes da entrega.</p>
             </section>
         </main>
 
@@ -76,5 +120,6 @@
             <p>Pequenas atitudes, grandes mudanças.</p>
         </footer>
     </div>
+    <script src="js/menu.js" defer></script>
 </body>
 </html>

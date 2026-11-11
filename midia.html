@@ -11,7 +11,8 @@
     <div class="pagina">
         <header class="cabecalho">
             <h2>Reaproveita.</h2>
-            <nav class="menu" aria-label="Menu principal">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+            <nav id="menu-principal" class="menu" aria-label="Menu principal">
                 <a href="index.html">Início</a>
                 <a href="sobre.html">Sobre</a>
                 <a href="projetos.html">Projetos</a>
@@ -40,6 +41,24 @@
                         <p>Encontre feiras livres e produtores locais para comprar itens frescos da estação.</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197587842721!2d-46.5601111!3d-23.5361889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eec3a277725%3A0x6a2c262a64704b2b!2sUNICID!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" title="Mapa de feiras orgânicas próximas à UNICID"></iframe>
                     </article>
+                    <article class="cartao">
+                        <h3>Vídeo de Aproveitamento</h3>
+                        <p>Três fotos do projeto: compostagem, farofa de talos e doce de casca de laranja.</p>
+                        <video controls preload="metadata" poster="img/compostagem.jpg" width="100%" aria-describedby="desc-video">
+                            <source src="assets/video-aproveitamento.mp4" type="video/mp4">
+                            Seu navegador não reproduz vídeo. <a href="assets/video-aproveitamento.mp4">Baixe o vídeo</a>.
+                        </video>
+                        <p id="desc-video"><small>Vídeo sem narração. Cada foto aparece por 5 segundos.</small></p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Áudio de Demonstração</h3>
+                        <p>Player de áudio do projeto. O arquivo atual é um tom de teste de 5 segundos, sem conteúdo falado.</p>
+                        <audio controls preload="none" aria-describedby="desc-audio">
+                            <source src="assets/audio-demonstracao.mp3" type="audio/mpeg">
+                            Seu navegador não reproduz áudio. <a href="assets/audio-demonstracao.mp3">Baixe o áudio</a>.
+                        </audio>
+                        <p id="desc-audio"><small>Transcrição: sinal sonoro de teste, sem fala.</small></p>
+                    </article>
                 </div>
             </section>
         </main>
@@ -49,5 +68,6 @@
             <p>Pequenas atitudes, grandes mudanças.</p>
         </footer>
     </div>
+    <script src="js/menu.js" defer></script>
 </body>
 </html>
