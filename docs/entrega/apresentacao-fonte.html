@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reaproveite – Apresentação</title>
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #1f2a1f; }
+  .slide { width: 1280px; height: 720px; padding: 60px 80px; background: #f7f9ef; position: relative; page-break-after: always; overflow: hidden; }
+  .slide:last-child { page-break-after: auto; }
+  .capa { background: #315b32; color: #fff; display: flex; flex-direction: column; justify-content: center; }
+  h1 { font-size: 56px; margin: 0 0 20px; color: #315b32; }
+  h2 { font-size: 40px; margin: 0 0 24px; color: #315b32; }
+  .capa h1 { color: #fff; font-size: 80px; }
+  .capa p { font-size: 28px; }
+  p, li { font-size: 28px; line-height: 1.4; }
+  ul { padding-left: 30px; }
+  li { margin-bottom: 12px; }
+  .num { position: absolute; right: 60px; bottom: 30px; font-size: 18px; color: #6b7a6b; }
+  .cols { display: flex; gap: 40px; }
+  .col { flex: 1; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,.08); }
+  .col h3 { font-size: 28px; margin: 0 0 12px; color: #315b32; }
+  .col p { font-size: 26px; }
+  .destaque { font-size: 30px; font-weight: bold; color: #315b32; }
+  .fonte { font-size: 16px; color: #555; }
+</style>
+</head>
+<body>
+
+<section class="slide capa">
+  <h1>Reaproveite</h1>
+  <p>Aproveitamento integral dos alimentos, sustentabilidade e combate ao desperdício</p>
+  <p style="margin-top:50px;font-size:22px;">Front-End · UNICID · Engenharia de Software · 2026<br>Equipe: Felipe de Souza Ferreira, Arthur Lanzoni Quim, Davi Melo Salgueiro Leonardi, Kaiky dos Santos Ferreira, Vinicius de Souza Vicente</p>
+  <span class="num">1</span>
+</section>
+
+<section class="slide">
+  <h2>Problema e público</h2>
+  <ul>
+    <li>Cascas, talos, sementes e folhas são descartados por falta de informação.</li>
+    <li>O desperdício gera custo para as famílias e lixo orgânico.</li>
+    <li><strong>Público prioritário:</strong> pessoas com deficiência, atendidas com acessibilidade digital.</li>
+  </ul>
+  <span class="num">2</span>
+</section>
+
+<section class="slide">
+  <h2>Objetivos</h2>
+  <ul>
+    <li>Portal educativo com 10 páginas navegáveis.</li>
+    <li>Formulário validado em JavaScript, com rascunho salvo no navegador.</li>
+    <li>Acessibilidade aplicada e revisada (WCAG).</li>
+    <li>Comparativo de hospedagem e domínio.</li>
+    <li>Site publicado com HTTPS e deploy automático.</li>
+  </ul>
+  <span class="num">3</span>
+</section>
+
+<section class="slide">
+  <h2>Equipe e papéis</h2>
+  <div class="cols">
+    <div class="col"><h3>Felipe</h3><p>[função]</p></div>
+    <div class="col"><h3>Arthur</h3><p>[função]</p></div>
+    <div class="col"><h3>Davi</h3><p>[função]</p></div>
+    <div class="col"><h3>Kaiky</h3><p>[função]</p></div>
+    <div class="col"><h3>Vinicius</h3><p>[função]</p></div>
+  </div>
+  <p class="fonte" style="margin-top:30px">Funções a preencher pela equipe antes da apresentação.</p>
+  <span class="num">4</span>
+</section>
+
+<section class="slide">
+  <h2>Arquitetura do projeto</h2>
+  <div class="cols">
+    <div class="col"><h3>HTML5</h3><p>10 páginas com estrutura semântica, <code>lang="pt-BR"</code> e um &lt;h1&gt; por página.</p></div>
+    <div class="col"><h3>CSS3</h3><p>Layout responsivo com Flexbox e media queries, em <code>estilos/style.css</code>.</p></div>
+    <div class="col"><h3>JavaScript</h3><p><code>js/contato.js</code> (validação e FAQ) e <code>js/menu.js</code> (menu).</p></div>
+  </div>
+  <p style="margin-top:30px">Pastas: <code>img/</code>, <code>assets/</code> (vídeo e áudio), <code>docs/</code> (documentação e evidências).</p>
+  <span class="num">5</span>
+</section>
+
+<section class="slide">
+  <h2>Do MVP à versão final</h2>
+  <ul>
+    <li>Adicionamos JavaScript obrigatório, que antes não existia nas páginas.</li>
+    <li>Formulário validado, com mensagens de erro e foco no primeiro campo inválido.</li>
+    <li>Multimídia: vídeo, áudio e iframes.</li>
+    <li>Menu responsivo no celular e pasta <code>/docs</code> completa.</li>
+    <li>Orçamento com três hospedagens e três domínios.</li>
+  </ul>
+  <span class="num">6</span>
+</section>
+
+<section class="slide">
+  <h2>JavaScript na prática</h2>
+  <ul>
+    <li><strong>Validação:</strong> <code>preventDefault</code> no envio, mensagens de erro e borda vermelha.</li>
+    <li><strong>Rascunho:</strong> dados salvos em <code>localStorage</code> e recuperados ao recarregar a página.</li>
+    <li><strong>Evento no DOM:</strong> o assistente de dúvidas abre e fecha com <code>aria-expanded</code>.</li>
+    <li><strong>Menu:</strong> botão no celular que abre e fecha a navegação.</li>
+  </ul>
+  <span class="num">7</span>
+</section>
+
+<section class="slide">
+  <h2>Acessibilidade e responsividade</h2>
+  <ul>
+    <li><code>alt</code> em todas as imagens, <code>&lt;label&gt;</code> em todos os campos.</li>
+    <li>Foco visível, navegação por teclado e ARIA nas mensagens de erro.</li>
+    <li>Layout sem rolagem horizontal no celular (390 px).</li>
+    <li>Vídeo e áudio com transcrição ou descrição.</li>
+  </ul>
+  <span class="num">8</span>
+</section>
+
+<section class="slide">
+  <h2>Processo no GitHub</h2>
+  <ul>
+    <li>Repositório público com histórico de commits.</li>
+    <li>Deploy automático no Railway a cada commit no <code>main</code>.</li>
+    <li>Branch e pull request para a entrega final.</li>
+    <li>Commits de todos os integrantes: [confirmar antes da apresentação].</li>
+  </ul>
+  <span class="num">9</span>
+</section>
+
+<section class="slide">
+  <h2>Uso de Inteligência Artificial</h2>
+  <ul>
+    <li>Usamos Claude para validar código, revisar acessibilidade e montar a documentação.</li>
+    <li>Registro de prompts, aceitos e corrigidos em <code>docs/uso-ia.md</code>.</li>
+    <li>Regras para a IA em <code>rules/regra.mdc</code>.</li>
+    <li>Toda sugestão foi revisada e testada antes de entrar no projeto.</li>
+  </ul>
+  <span class="num">10</span>
+</section>
+
+<section class="slide">
+  <h2>Deploy e orçamento</h2>
+  <div class="cols">
+    <div class="col"><h3>Hospedagem</h3><p>Railway: US$ 5/mês, com US$ 5 de crédito incluído.</p></div>
+    <div class="col"><h3>Domínio</h3><p>Registro.br (.com.br): R$ 40/ano.</p></div>
+    <div class="col"><h3>Custo anual</h3><p>Cerca de US$ 60 + R$ 40.</p></div>
+  </div>
+  <p class="fonte" style="margin-top:30px">Valores consultados em 11/11/2026. Detalhes em orcamento_hospedagem.html.</p>
+  <span class="num">11</span>
+</section>
+
+<section class="slide">
+  <h2>Resultados dos testes</h2>
+  <ul>
+    <li><strong>25 de 25</strong> verificações de comportamento passaram (formulário, FAQ, menu, mídia).</li>
+    <li><strong>0 erros</strong> no validador W3C nas 10 páginas HTML.</li>
+    <li><strong>Lighthouse:</strong> acessibilidade 100 e SEO 100 nas páginas testadas.</li>
+  </ul>
+  <p class="fonte">Evidências em docs/evidencias-testes.md</p>
+  <span class="num">12</span>
+</section>
+
+<section class="slide">
+  <h2>Aprendizados</h2>
+  <ul>
+    <li>A validação nativa do HTML não basta: o JavaScript precisa controlar o envio.</li>
+    <li>Testar no navegador (inclusive no celular) revela problemas que o código não mostra.</li>
+    <li>Documentar as decisões no diário de bordo facilita a entrega.</li>
+  </ul>
+  <span class="num">13</span>
+</section>
+
+<section class="slide capa">
+  <h1>Demonstração</h1>
+  <p>Acesse o site publicado e veja: formulário com erro, envio válido, menu no celular e navegação pelo teclado.</p>
+  <p style="margin-top:40px;font-size:24px;">Obrigado!</p>
+  <span class="num">14</span>
+</section>
+
+</body>
+</html>
