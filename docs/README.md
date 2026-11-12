@@ -25,7 +25,7 @@
 |---|---|
 | Felipe de Souza Ferreira | [preencher: páginas, JS e deploy] |
 | Arthur Lanzoni Quim | [preencher] |
-| Davi Melo Salgueiro Leonardi | [preencher] |
+| Davi Melo Salgueiro Leonardo | [preencher] |
 | Kaiky dos Santos Ferreira | [preencher] |
 | Vinicius de Souza Vicente | [preencher] |
 

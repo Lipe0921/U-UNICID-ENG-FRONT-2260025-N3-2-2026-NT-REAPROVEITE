@@ -1,11 +1,11 @@
 Projeto: Reaproveite – Entrega final (2ª entrega) – Front-End – UNICID
 
 Integrantes:
-Felipe de Souza Ferreira – RA/RGM: 48120863
-Arthur Lanzoni Quim – RA: [preencher]
-Davi Melo Salgueiro Leonardi – RA: [preencher]
-Kaiky dos Santos Ferreira – RA: [preencher]
-Vinicius de Souza Vicente – RA: [preencher]
+Felipe de Souza Ferreira – RA: 48120863
+Arthur Lanzoni Quim – RA: 47711957
+Davi Melo Salgueiro Leonardo – RA: 48129470
+Kaiky dos Santos Ferreira – RA: 47802928
+Vinicius de Souza Vicente – RA: 47709987
 
 URL do site: https://u-unicid-eng-front-2260025-n3-2-2026-nt-reaprove-production.up.railway.app
 Repositório GitHub: https://github.com/Lipe0921/U-UNICID-ENG-FRONT-2260025-N3-2-2026-NT-REAPROVEITE
