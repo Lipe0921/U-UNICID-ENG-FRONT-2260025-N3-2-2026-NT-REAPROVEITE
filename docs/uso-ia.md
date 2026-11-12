@@ -18,6 +18,6 @@
 - Arquivo `rules/regra.mdc`: define HTML5 semântico, CSS3 responsivo, WCAG 2.2 AA e estrutura de pastas. Usada como contexto em todas as sessões com a IA.
 
 ## Limitações da IA encontradas
-- Não foi possível gerar narração em português (sem acesso ao serviço de voz). Por isso o áudio é um tom de teste.
+- Não foi possível gerar narração em português (sem acesso ao serviço de voz). A narração foi gravada pela equipe.
 - Não foi possível publicar nem atualizar o site a partir do ambiente da IA sem permissão de escrita no repositório.
 - A IA não acessa o GitHub para publicar: a equipe precisa fazer o push e conferir o deploy no Railway.

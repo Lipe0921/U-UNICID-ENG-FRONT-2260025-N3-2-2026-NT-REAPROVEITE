@@ -30,8 +30,8 @@
 
 ## 11/11/2026 – Mídia
 - **Decisão:** acrescentar um vídeo (feito com as fotos do próprio projeto) e um player de áudio.
-- **Dificuldade:** não havia gravação de narração disponível. O áudio atual é um tom de teste, identificado na página.
-- **Próximo passo:** gravar uma narração e trocar `assets/audio-demonstracao.mp3`.
+- **Dificuldade:** não havia gravação de narração disponível. Depois, a equipe gravou a narração e ela foi incluída no site.
+- **Próximo passo:** conferir se a transcrição na página corresponde à gravação.
 
 ## 11/11/2026 – Menu e responsividade
 - **Decisão:** menu com botão “Menu” no celular, que abre e fecha com JavaScript e `aria-expanded`.
