@@ -14,12 +14,12 @@
 
 ## 9/10/2026 – Vídeos e formulários
 - **Decisão:** implementar os vídeos e os formulários do site.
-- **Trabalho:** [preencher quem fez].
+- **Trabalho:** Felipe fez os vídeos e os formulários.
 - **Dificuldade:** [preencher].
 
 ## 23/10/2026 – Aplicação do JavaScript
 - **Decisão:** acrescentar JavaScript nas páginas, com validação do formulário, mensagens de erro e rascunho salvo em `localStorage`.
-- **Trabalho:** [preencher quem fez].
+- **Trabalho:** Felipe aplicou o JavaScript.
 - **Dificuldade:** o formulário enviava mesmo com campos inválidos, porque não havia `preventDefault`. Solução: `novalidate` no formulário e validação própria em `js/contato.js`.
 - **Aprendizado:** a validação nativa do HTML5 não basta; o JavaScript precisa controlar o envio e as mensagens.
 
