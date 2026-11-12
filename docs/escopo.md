@@ -92,7 +92,7 @@ Ferramenta de gestão: [preencher: Trello, Notion ou issues do GitHub].
 - Prazo curto para a 2ª entrega.
 - Dependência de internet para vídeo e mapa (iframes).
 - Conhecimento técnico em JavaScript ainda em desenvolvimento.
-- O áudio atual é um tom de teste; a gravação com narração depende da equipe.
+- A transcrição do áudio precisa ser conferida com a gravação final.
 
 ## 12. Critérios de aceitação
 - 10 páginas navegáveis.
