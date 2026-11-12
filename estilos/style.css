@@ -419,8 +419,10 @@ caption {
 }
 
 /* 15. LOGOTIPO COMO LINK PARA A INICIAL */
+.cabecalho h2 a,
+.cabecalho h2 a:visited,
 .logo {
-    color: inherit;
+    color: var(--cor-primaria);
     text-decoration: none;
 }
 
