@@ -158,17 +158,24 @@
             return;
         }
 
+        var destino = 'felipeunicid1209@gmail.com';
+        var assunto = 'Contato pelo site Reaproveite - ' + document.getElementById('nome').value.trim();
+        var corpo = [
+            'Nome: ' + document.getElementById('nome').value.trim(),
+            'E-mail: ' + document.getElementById('email').value.trim(),
+            'Telefone: ' + document.getElementById('tel').value.trim(),
+            'Data sugerida: ' + document.getElementById('data').value,
+            '',
+            document.getElementById('mensagem').value.trim()
+        ].join('\n');
+
         try { localStorage.removeItem(CHAVE); } catch (e) { /* segue */ }
-        form.reset();
-        ids.forEach(function (id) {
-            var campo = document.getElementById(id);
-            campo.setAttribute('aria-invalid', 'false');
-            campo.classList.remove('campo-invalido');
-            document.getElementById('erro-' + id).textContent = '';
-        });
         if (status) {
-            status.textContent = 'Formulário validado com sucesso. Este projeto não envia dados a um servidor: o envio é simulado.';
+            status.textContent = 'Abrindo seu aplicativo de e-mail com a mensagem pronta. Se nada abrir, envie manualmente para ' + destino + '.';
         }
+        window.location.href = 'mailto:' + destino +
+            '?subject=' + encodeURIComponent(assunto) +
+            '&body=' + encodeURIComponent(corpo);
     });
 
     restaurarRascunho();
