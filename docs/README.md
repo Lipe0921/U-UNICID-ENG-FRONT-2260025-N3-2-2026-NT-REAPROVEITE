@@ -23,11 +23,11 @@
 
 | Integrante | Função no projeto |
 |---|---|
-| Felipe de Souza Ferreira | [preencher: páginas, JS e deploy] |
-| Arthur Lanzoni Quim | [preencher] |
-| Davi Melo Salgueiro Leonardo | [preencher] |
-| Kaiky dos Santos Ferreira | [preencher] |
-| Vinicius de Souza Vicente | [preencher] |
+| Felipe de Souza Ferreira | Escopo do site e publicação (deploy) |
+| Arthur Lanzoni Quim | CSS (em dupla com Vinicius) |
+| Davi Melo Salgueiro Leonardo | Pesquisas para o conteúdo do site |
+| Kaiky dos Santos Ferreira | Apoio geral à equipe |
+| Vinicius de Souza Vicente | CSS (em dupla com Arthur) |
 
 **Professores orientadores:** Prof. Paulo Fratta e Prof.ª Tatiana.
 
