@@ -3,8 +3,9 @@
 > Rascunho baseado no repositório. A equipe deve revisar, preencher os campos entre colchetes e aprovar.
 
 ## 1. Identificação
-- **Equipe:** Felipe de Souza Ferreira, Arthur Lanzoni Quim, Davi Melo Salgueiro Leonardi, Kaiky dos Santos Ferreira, Vinicius de Souza Vicente
+- **Equipe:** Felipe de Souza Ferreira, Arthur Lanzoni Quim, Davi Melo Salgueiro Leonardo, Kaiky dos Santos Ferreira, Vinicius de Souza Vicente
 - **Projeto/site:** Reaproveite
+- **Responsável pelo escopo e pela publicação:** Felipe de Souza Ferreira
 - **Data:** [preencher]
 - **Disciplina:** Front-End – UNICID (Engenharia de Software)
 - **Professores:** Prof. Paulo Fratta e Prof.ª Tatiana
