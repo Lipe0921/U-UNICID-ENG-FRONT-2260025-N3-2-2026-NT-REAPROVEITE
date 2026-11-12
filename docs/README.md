@@ -2,7 +2,7 @@
 
 > Projeto desenvolvido por estudantes de Engenharia de Software da UNICID para promover o aproveitamento integral dos alimentos, o combate ao desperdício e a preservação ambiental.
 
-**🌐 Site publicado:** https://u-unicid-eng-front-2260025-n3-2-2026-nt-reaprove-production.up.railway.app
+**🌐 Site publicado:** https://reaproveite.up.railway.app
 
 **📦 Repositório:** https://github.com/Lipe0921/U-UNICID-ENG-FRONT-2260025-N3-2-2026-NT-REAPROVEITE
 
