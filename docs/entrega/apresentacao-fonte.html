@@ -26,6 +26,9 @@
   .col p { font-size: 26px; }
   .destaque { font-size: 30px; font-weight: bold; color: #315b32; }
   .fonte { font-size: 16px; color: #555; }
+  .print { position: absolute; border: 2px solid #315b32; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.15); background:#fff; }
+  .print img { display:block; width:100%; height:100%; object-fit: contain; object-position: top; border-radius: 8px; }
+  .legenda-print { position:absolute; font-size:18px; color:#315b32; font-weight:bold; }
   .bloco { position: absolute; left: 60px; bottom: 30px; font-size: 16px; color: #315b32; font-weight: bold; }
 </style>
 </head>
@@ -36,7 +39,6 @@
   <p>Aproveitamento integral dos alimentos, sustentabilidade e combate ao desperdício</p>
   <p style="margin-top:50px;font-size:22px;">Front-End · UNICID · Engenharia de Software · 2026<br>Equipe: Felipe de Souza Ferreira, Arthur Lanzoni Quim, Davi Melo Salgueiro Leonardo, Kaiky dos Santos Ferreira, Vinicius de Souza Vicente</p>
   <span class="bloco">Bloco A · Abertura</span>
-  <span class="bloco">Bloco 1 · Abertura, contexto, GitHub e custos</span>
   <span class="num">1</span>
 </section>
 
@@ -50,7 +52,6 @@
     <li><strong>Público prioritário:</strong> pessoas com deficiência, atendidas com acessibilidade digital.</li>
   </ul>
   <span class="bloco">Bloco A · Abertura</span>
-  <span class="bloco">Bloco 1 · Abertura, contexto, GitHub e custos</span>
   <span class="num">2</span>
 </section>
 
@@ -64,7 +65,6 @@
     <li>Site publicado com HTTPS e deploy automático.</li>
   </ul>
   <span class="bloco">Bloco B · Papéis e estrutura</span>
-  <span class="bloco">Bloco 2 · Papéis, objetivos e estrutura HTML/CSS</span>
   <span class="num">3</span>
 </section>
 
@@ -79,7 +79,6 @@
   </div>
   <p class="fonte" style="margin-top:30px">Funções definidas pela própria equipe.</p>
   <span class="bloco">Bloco B · Papéis e estrutura</span>
-  <span class="bloco">Bloco 2 · Papéis, objetivos e estrutura HTML/CSS</span>
   <span class="num">4</span>
 </section>
 
@@ -92,7 +91,6 @@
   </div>
   <p style="margin-top:30px">Pastas: <code>img/</code>, <code>assets/</code> (vídeo e áudio), <code>docs/</code> (documentação e evidências).</p>
   <span class="bloco">Bloco B · Papéis e estrutura</span>
-  <span class="bloco">Bloco 2 · Papéis, objetivos e estrutura HTML/CSS</span>
   <span class="num">5</span>
 </section>
 
@@ -106,33 +104,34 @@
     <li>Orçamento com três hospedagens e três domínios.</li>
   </ul>
   <span class="bloco">Bloco C · MVP e JavaScript</span>
-  <span class="bloco">Bloco 3 · Evolução do MVP e lógica em JavaScript</span>
   <span class="num">6</span>
 </section>
 
 <section class="slide">
   <h2>JavaScript na prática</h2>
-  <ul>
+  <ul style="width:620px">
     <li><strong>Validação:</strong> <code>preventDefault</code> no envio, mensagens de erro e borda vermelha.</li>
     <li><strong>Rascunho:</strong> dados salvos em <code>localStorage</code> e recuperados ao recarregar a página.</li>
     <li><strong>Evento no DOM:</strong> o assistente de dúvidas abre e fecha com <code>aria-expanded</code>.</li>
     <li><strong>Menu:</strong> botão no celular que abre e fecha a navegação.</li>
   </ul>
+  <figure class="print" style="right:80px;top:190px;width:440px;height:310px;margin:0"><img src="../evidencias/contato-desktop.png" alt="Formulário de contato com mensagens de erro"></figure>
+  <span class="legenda-print" style="right:80px;top:515px">Formulário de contato com validação</span>
   <span class="bloco">Bloco C · MVP e JavaScript</span>
-  <span class="bloco">Bloco 3 · Evolução do MVP e lógica em JavaScript</span>
   <span class="num">7</span>
 </section>
 
 <section class="slide">
   <h2>Acessibilidade e responsividade</h2>
-  <ul>
+  <ul style="width:620px">
     <li><code>alt</code> em todas as imagens, <code>&lt;label&gt;</code> em todos os campos.</li>
     <li>Foco visível, navegação por teclado e ARIA nas mensagens de erro.</li>
     <li>Layout sem rolagem horizontal no celular (390 px).</li>
     <li>Vídeo e áudio com transcrição ou descrição.</li>
   </ul>
+  <figure class="print" style="right:80px;top:190px;width:440px;height:310px;margin:0"><img src="../evidencias/midia-desktop.png" alt="Página de mídia com vídeo, áudio e mapa"></figure>
+  <span class="legenda-print" style="right:80px;top:515px">Página de mídia: vídeo e áudio</span>
   <span class="bloco">Bloco D · Acessibilidade, mídia e IA</span>
-  <span class="bloco">Bloco 4 · Acessibilidade, mídia e uso de IA</span>
   <span class="num">8</span>
 </section>
 
@@ -145,7 +144,6 @@
     <li>Fluxo da equipe: commits descritivos, branches por entrega e pull requests revisados antes de entrar na <code>main</code>.</li>
   </ul>
   <span class="bloco">Bloco A · Abertura</span>
-  <span class="bloco">Bloco 1 · Abertura, contexto, GitHub e custos</span>
   <span class="num">9</span>
 </section>
 
@@ -158,7 +156,6 @@
     <li>Toda sugestão foi revisada e testada antes de entrar no projeto.</li>
   </ul>
   <span class="bloco">Bloco D · Acessibilidade, mídia e IA</span>
-  <span class="bloco">Bloco 4 · Acessibilidade, mídia e uso de IA</span>
   <span class="num">10</span>
 </section>
 
@@ -171,7 +168,6 @@
   </div>
   <p class="fonte" style="margin-top:30px">Valores consultados em 11/11/2026. Detalhes em orcamento_hospedagem.html.</p>
   <span class="bloco">Bloco A · Abertura</span>
-  <span class="bloco">Bloco 1 · Abertura, contexto, GitHub e custos</span>
   <span class="num">11</span>
 </section>
 
@@ -184,7 +180,6 @@
   </ul>
   <p class="fonte">Evidências em docs/evidencias-testes.md</p>
   <span class="bloco">Bloco E · Testes e demonstração</span>
-  <span class="bloco">Bloco 5 · Testes, validação, aprendizados e demonstração</span>
   <span class="num">12</span>
 </section>
 
@@ -196,7 +191,6 @@
     <li>Documentar as decisões no diário de bordo facilita a entrega.</li>
   </ul>
   <span class="bloco">Bloco E · Testes e demonstração</span>
-  <span class="bloco">Bloco 5 · Testes, validação, aprendizados e demonstração</span>
   <span class="num">13</span>
 </section>
 
@@ -205,7 +199,6 @@
   <p>Acesse o site publicado e veja: formulário com erro, envio válido, menu no celular e navegação pelo teclado.</p>
   <p style="margin-top:40px;font-size:24px;">Obrigado!</p>
   <span class="bloco">Bloco E · Testes e demonstração</span>
-  <span class="bloco">Bloco 5 · Testes, validação, aprendizados e demonstração</span>
   <span class="num">14</span>
 </section>
 
