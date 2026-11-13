@@ -6,7 +6,7 @@
 - **Equipe:** Felipe de Souza Ferreira, Arthur Lanzoni Quim, Davi Melo Salgueiro Leonardo, Kaiky dos Santos Ferreira, Vinicius de Souza Vicente
 - **Projeto/site:** Reaproveite
 - **Responsável pelo escopo e pela publicação:** Felipe de Souza Ferreira
-- **Data:** [preencher]
+- **Data:** 2/10/2026
 - **Disciplina:** Front-End – UNICID (Engenharia de Software)
 - **Professores:** Prof. Paulo Fratta e Prof.ª Tatiana
 
@@ -72,7 +72,7 @@ Todas as páginas têm o mesmo menu principal, no topo.
 - **Cores:** verde (#315b32 e #a9c95d), tons claros de verde e branco.
 - **Tipografia:** Arial, Helvetica e sans-serif.
 - **Logotipo:** texto “Reaproveita.” [substituir por logotipo, se houver].
-- **Fontes das imagens e textos:** [preencher: autoral ou com indicação de fonte, como em galeria.html].
+- **Fontes das imagens e textos:** imagens criadas pela equipe, com a indicação “Fonte: imagem criada pela equipe” nas legendas de galeria.html. Textos autorais, com fontes indicadas nas páginas quando usadas.
 
 ## 9. Tecnologias e ferramentas
 - HTML5, CSS3 e JavaScript (vanilla).
@@ -86,7 +86,7 @@ Todas as páginas têm o mesmo menu principal, no topo.
 | Versão final (2ª entrega) | [preencher] | [preencher] |
 | Apresentação | [preencher] | Todos |
 
-Ferramenta de gestão: [preencher: Trello, Notion ou issues do GitHub].
+Ferramenta de gestão: GitHub (repositório, branches e pull requests).
 
 ## 11. Riscos e restrições
 - Prazo curto para a 2ª entrega.
