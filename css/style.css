@@ -430,3 +430,26 @@ caption {
 .logo:focus-visible {
     text-decoration: underline;
 }
+
+/* Modo daltonismo: azul e laranja, pares fáceis de distinguir para daltonismo vermelho-verde. */
+html.modo-daltonico {
+    --cor-fundo: #fff4d6;
+    --cor-suave: #fffbf0;
+    --cor-destaque: #cfe4f7;
+    --cor-primaria: #00457a;
+    --cor-primaria-hover: #00294a;
+    --cor-texto: #111111;
+}
+html.modo-daltonico body { background-color: #fff4d6; }
+html.modo-daltonico .alternar-daltonismo { background-color: #e69f00; color: #111111; }
+.alternar-daltonismo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: 2px solid currentColor;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+.alternar-daltonismo:focus-visible { outline: 3px solid #e69f00; outline-offset: 2px; }
