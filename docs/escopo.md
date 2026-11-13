@@ -27,7 +27,7 @@
 ## 4. Público-alvo
 - Pessoas que querem economizar em alimentação e reduzir o desperdício.
 - Público prioritário: **pessoas com deficiência**, atendidas com acessibilidade (alt, contraste, teclado, ARIA, legendas e transcrições em mídia).
-- Faixa etária e localização: [preencher, ex.: adultos em São Paulo].
+- Faixa etária e localização: adultos em São Paulo.
 
 ## 5. Escopo funcional
 | Página | Função |
@@ -82,9 +82,9 @@ Todas as páginas têm o mesmo menu principal, no topo.
 ## 10. Cronograma e divisão de tarefas
 | Etapa | Data | Responsável |
 |---|---|---|
-| MVP (1ª entrega) | [preencher] | [preencher] |
-| Versão final (2ª entrega) | [preencher] | [preencher] |
-| Apresentação | [preencher] | Todos |
+| MVP (1ª entrega) | 2/10/2026 | Todos |
+| Versão final (2ª entrega) | 13/11/2026 | Todos |
+| Apresentação | 13/11/2026 | Todos |
 
 Ferramenta de gestão: GitHub (repositório, branches e pull requests).
 
@@ -102,5 +102,5 @@ Ferramenta de gestão: GitHub (repositório, branches e pull requests).
 - Site publicado com HTTPS.
 
 ## 13. Aprovação
-- **Responsável pela validação do escopo:** [preencher]
-- **Data e assinatura:** [preencher]
+- **Responsável pela validação do escopo:** Felipe de Souza Ferreira
+- **Data e assinatura:** 13/11/2026. Assinatura: ______________________
