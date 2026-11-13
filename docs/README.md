@@ -53,7 +53,7 @@
 ```
 /
 ├── index.html … orcamento_hospedagem.html   (10 páginas)
-├── estilos/style.css                        (estilos gerais e responsivos)
+├── css/style.css                        (estilos gerais e responsivos)
 ├── js/contato.js                            (FAQ e validação do formulário)
 ├── js/menu.js                               (menu responsivo)
 ├── img/                                     (imagens do site)
