@@ -14,7 +14,7 @@ Garantir que todo o código gerado ou modificado para o site Reaproveita siga os
 * **Tecnologias:** HTML5 puro, CSS3 puro e JavaScript vanilla. Sem frameworks (não usar Bootstrap, Tailwind, React, Vue, etc.).
 * **Estrutura do Repositório:**
   * 10 páginas HTML na raiz (`index.html`, `sobre.html`, `projetos.html`, `impacto.html`, `acessibilidade.html`, `galeria.html`, `midia.html`, `noticias.html`, `contato.html`, `orcamento_hospedagem.html`).
-  * Estilos na pasta `estilos/style.css`.
+  * Estilos na pasta `css/style.css`.
   * Imagens na pasta `img/`.
   * Documentação na pasta `docs/README.md`.
 
@@ -29,7 +29,7 @@ Garantir que todo o código gerado ou modificado para o site Reaproveita siga os
 
 ### CSS3 e Responsividade
 * **Mobile-First:** Escrever o CSS padrão voltado para celulares e usar `@media (min-width: 768px)` para telas maiores.
-* **Variáveis globais:** Usar as variáveis de cores e fontes definidas em `:root` no arquivo `estilos/style.css`.
+* **Variáveis globais:** Usar as variáveis de cores e fontes definidas em `:root` no arquivo `css/style.css`.
 * **Foco visível:** Manter os estados `:focus` e `:focus-visible` visíveis para navegação por teclado.
 
 ## 4. O que NÃO fazer
