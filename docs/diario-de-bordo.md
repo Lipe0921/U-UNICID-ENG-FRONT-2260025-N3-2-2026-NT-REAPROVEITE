@@ -1,21 +1,21 @@
 # Diário de Bordo – Reaproveite
 
-> Registro das etapas do projeto, em ordem cronológica. As dificuldades marcadas com [preencher] devem ser completadas pela equipe.
+> Registro das etapas do projeto, em ordem cronológica.
 
 ## 2/10/2026 – Definição do tema e início do CSS
 - **Decisão:** escolher sustentabilidade e aproveitamento de alimentos como tema.
 - **Aprendizado:** o tema precisa ser ligado ao público com deficiência, como exige o enunciado.
 - **Trabalho:** Arthur e Vinicius começaram o CSS. Davi fez as pesquisas para o conteúdo. Felipe fez o escopo do site.
-- **Dificuldade:** [preencher].
+- **Dificuldade:** o tema não foi discutido logo no início. Depois, todos concordaram, e as tarefas foram atribuídas.
 
 ## Estrutura do MVP (1ª entrega)
 - **Decisão:** criar 10 páginas HTML com menu, cabeçalho e rodapé repetidos.
-- **Dificuldade:** [preencher].
+- **Dificuldade:** nenhuma registrada.
 
 ## 9/10/2026 – Vídeos e formulários
 - **Decisão:** implementar os vídeos e os formulários do site.
 - **Trabalho:** Felipe fez os vídeos e os formulários.
-- **Dificuldade:** [preencher].
+- **Dificuldade:** pouca. A parte do formulário apresentou erros com frequência durante os testes.
 
 ## 23/10/2026 – Aplicação do JavaScript
 - **Decisão:** acrescentar JavaScript nas páginas, com validação do formulário, mensagens de erro e rascunho salvo em `localStorage`.
@@ -44,4 +44,4 @@
 
 ## 11/11/2026 – Publicação e GitHub
 - **Decisão:** publicar as mudanças por meio de branch e pull request (PR #1).
-- **Dificuldade:** [preencher].
+- **Dificuldade:** nenhuma registrada.
