@@ -14,6 +14,9 @@
 | 11/11/2026 | Pedido para fazer “o resto que consegue”: validação W3C, Lighthouse e preços. | Validação com o motor oficial (`vnu`), correção de títulos e atributos, Lighthouse, preços de Railway e Vercel conferidos. | Sim. | Foram corrigidos: títulos `h3` depois de `h1`, `width="100%"` em iframes, e a informação de crédito do Railway. |
 | [data] | [prompt] | [resultado] | [sim/não] | [o que foi corrigido] |
 
+## Imagens
+- As fotos da galeria foram criadas pela equipe, como indicado na legenda de cada imagem. [Confirmar a ferramenta usada, se for de IA, e registrar aqui.]
+
 ## Regras e contexto
 - Arquivo `rules/regra.mdc`: define HTML5 semântico, CSS3 responsivo, WCAG 2.2 AA e estrutura de pastas. Usada como contexto em todas as sessões com a IA.
 
