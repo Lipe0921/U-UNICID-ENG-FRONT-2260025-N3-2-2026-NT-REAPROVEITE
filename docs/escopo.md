@@ -71,7 +71,7 @@ Todas as páginas têm o mesmo menu principal, no topo.
 - **Tom de voz:** informal e educativo, com frases curtas.
 - **Cores:** verde (#315b32 e #a9c95d), tons claros de verde e branco.
 - **Tipografia:** Arial, Helvetica e sans-serif.
-- **Logotipo:** texto “Reaproveita.” [substituir por logotipo, se houver].
+- **Logotipo:** texto “Reaproveite.” [substituir por logotipo, se houver].
 - **Fontes das imagens e textos:** imagens criadas pela equipe, com a indicação “Fonte: imagem criada pela equipe” nas legendas de galeria.html. Textos autorais, com fontes indicadas nas páginas quando usadas.
 
 ## 9. Tecnologias e ferramentas
