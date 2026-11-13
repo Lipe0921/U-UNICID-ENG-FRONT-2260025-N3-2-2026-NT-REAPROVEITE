@@ -20,6 +20,7 @@
 ## 23/10/2026 – Aplicação do JavaScript
 - **Decisão:** acrescentar JavaScript nas páginas, com validação do formulário, mensagens de erro e rascunho salvo em `localStorage`.
 - **Trabalho:** Felipe aplicou o JavaScript.
+- **Dificuldade:** a equipe nunca tinha usado JavaScript antes. A parte de Java/JavaScript foi a mais difícil do projeto, e foi preciso estudar a sintaxe, os eventos e o `localStorage` antes de aplicar no site.
 - **Dificuldade:** o formulário enviava mesmo com campos inválidos, porque não havia `preventDefault`. Solução: `novalidate` no formulário e validação própria em `js/contato.js`.
 - **Aprendizado:** a validação nativa do HTML5 não basta; o JavaScript precisa controlar o envio e as mensagens.
 
