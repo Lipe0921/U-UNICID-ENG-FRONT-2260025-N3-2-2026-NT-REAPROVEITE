@@ -1,5 +1,7 @@
 # Melhorias do MVP (1ª entrega → 2ª entrega)
 
+> Lista dos pontos apontados pelo professor na 1ª entrega: **não encontrada** nos materiais da disciplina. A tabela abaixo reúne as melhorias feitas pela equipe, a partir do estado do repositório.
+
 > A lista oficial de pontos apontados pelos professores deve ser colada aqui. Abaixo estão as melhorias feitas a partir do estado do repositório.
 
 | # | Ponto do MVP | Antes | Depois | Evidência |
