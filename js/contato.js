@@ -71,6 +71,14 @@
                 return '';
             }
         },
+        pessoas: {
+            validar: function (v) {
+                var n = Number(v);
+                if (v === '') { return 'Informe o número de pessoas.'; }
+                if (!Number.isInteger(n) || n < 1 || n > 50) { return 'Use um número inteiro entre 1 e 50.'; }
+                return '';
+            }
+        },
         mensagem: {
             validar: function (v) {
                 var t = v.trim();
@@ -164,6 +172,7 @@
             'Nome: ' + document.getElementById('nome').value.trim(),
             'E-mail: ' + document.getElementById('email').value.trim(),
             'Telefone: ' + document.getElementById('tel').value.trim(),
+            'Número de pessoas: ' + document.getElementById('pessoas').value,
             'Data sugerida: ' + document.getElementById('data').value,
             '',
             document.getElementById('mensagem').value.trim()
